@@ -1,6 +1,6 @@
 package be.creynders.relaxedsignalsdemo.service.signals
 {
-	import be.creynders.relaxedsignalsdemo.vos.ConfigDataVO;
+	import be.creynders.relaxedsignalsdemo.service.vos.ConfigDataVO;
 	
 	import org.osflash.signals.relaxed.RelaxedSignal;
 	

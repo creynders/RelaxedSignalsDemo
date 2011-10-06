@@ -1,7 +1,7 @@
 package be.creynders.relaxedsignalsdemo.controller.commands
 {
 	import be.creynders.framework.debug.logger.ILogger;
-	import be.creynders.relaxedsignalsdemo.service.actors.EmbeddedXMLConfigDataRetrieverService;
+	import be.creynders.relaxedsignalsdemo.service.actors.EmbeddedConfigDataRetrieverService;
 	import be.creynders.relaxedsignalsdemo.service.actors.IConfigDataRetrieverService;
 	import be.creynders.relaxedsignalsdemo.service.parsers.IConfigDataParser;
 	import be.creynders.relaxedsignalsdemo.service.parsers.XMLConfigDataParser;
@@ -20,7 +20,7 @@ package be.creynders.relaxedsignalsdemo.controller.commands
 			
 			this.injector.mapSingleton( ConfigDataRetrievedSignal );
 			
-			this.injector.mapSingletonOf( IConfigDataRetrieverService, EmbeddedXMLConfigDataRetrieverService );
+			this.injector.mapSingletonOf( IConfigDataRetrieverService, EmbeddedConfigDataRetrieverService );
 			
 		}
 	}

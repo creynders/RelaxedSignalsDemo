@@ -1,7 +1,7 @@
 package be.creynders.relaxedsignalsdemo.service.parsers
 {
 	import be.creynders.framework.utils.XMLUtil;
-	import be.creynders.relaxedsignalsdemo.vos.ConfigDataVO;
+	import be.creynders.relaxedsignalsdemo.service.vos.ConfigDataVO;
 	
 	public class XMLConfigDataParser implements IConfigDataParser
 	{

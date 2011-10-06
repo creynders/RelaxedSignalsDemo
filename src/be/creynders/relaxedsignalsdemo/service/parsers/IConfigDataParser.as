@@ -1,6 +1,6 @@
 package be.creynders.relaxedsignalsdemo.service.parsers
 {
-	import be.creynders.relaxedsignalsdemo.vos.ConfigDataVO;
+	import be.creynders.relaxedsignalsdemo.service.vos.ConfigDataVO;
 
 	public interface IConfigDataParser
 	{

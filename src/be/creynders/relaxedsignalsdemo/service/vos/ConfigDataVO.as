@@ -1,4 +1,4 @@
-package be.creynders.relaxedsignalsdemo.vos
+package be.creynders.relaxedsignalsdemo.service.vos
 {
 	public class ConfigDataVO
 	{

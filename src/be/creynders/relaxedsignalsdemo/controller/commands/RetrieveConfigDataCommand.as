@@ -3,7 +3,7 @@ package be.creynders.relaxedsignalsdemo.controller.commands
 	import be.creynders.framework.debug.logger.ILogger;
 	import be.creynders.relaxedsignalsdemo.service.actors.IConfigDataRetrieverService;
 	import be.creynders.relaxedsignalsdemo.service.signals.ConfigDataRetrievedSignal;
-	import be.creynders.relaxedsignalsdemo.vos.ConfigDataVO;
+	import be.creynders.relaxedsignalsdemo.service.vos.ConfigDataVO;
 	
 	import org.robotlegs.mvcs.Command;
 	
