@@ -1,0 +1,3 @@
+[submodule "src-ext/creynders-framework"]
+	path = src-ext/creynders-framework
+	url = git@github.com:creynders/creynders-framework.git
