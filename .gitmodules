@@ -1,3 +1,9 @@
 [submodule "src-ext/creynders-framework"]
 	path = src-ext/creynders-framework
 	url = git@github.com:creynders/creynders-framework.git
+[submodule "src-ext/signals-extensions-CommandSignal"]
+	path = src-ext/signals-extensions-CommandSignal
+	url = https://github.com/joelhooks/signals-extensions-CommandSignal.git
+[submodule "src-ext/as3-signals"]
+	path = src-ext/as3-signals
+	url = https://github.com/creynders/as3-signals

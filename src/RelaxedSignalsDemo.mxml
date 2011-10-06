@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-			   xmlns:s="library://ns.adobe.com/flex/spark" 
-			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   xmlns:relaxedsignalsdemo="be.creynders.relaxedsignalsdemo.*"
+			   xmlns:components="be.creynders.relaxedsignalsdemo.view.components.*"
+			   width="955" height="600"
+			   currentState="hideConfigDataWindow">
+	<fx:Script>
+		<![CDATA[
+			import mx.events.CloseEvent;
+			import mx.events.FlexEvent;
+			
+			
+			private function showWindow():void{
+				this.currentState = 'showConfigDataWindow';
+			}
+			
+			private function closeWindow() : void{
+				this.currentState = 'hideConfigDataWindow';
+			}
+			
+			protected function configDataWindow_closeHandler(event:CloseEvent):void
+			{
+				closeWindow()
+			}
+			
+			protected function showConfigDataWindowButton_clickHandler(event:MouseEvent):void
+			{
+				showWindow();
+			}
+			
+		]]>
+	</fx:Script>
+	<s:states>
+		<s:State name="showConfigDataWindow"/>
+		<s:State name="hideConfigDataWindow"/>
+	</s:states>
 	<fx:Declarations>
-		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<relaxedsignalsdemo:RelaxedSignalsDemoContext contextView="{this}" />
 	</fx:Declarations>
+	<components:ConfigDataWindow id="configDataWindow" includeIn="showConfigDataWindow"
+								 close="configDataWindow_closeHandler(event)"
+								 horizontalCenter="0" verticalCenter="0"
+								 width="400" height="300"/>
+	<s:Button id="showConfigDataWindowButton" click="showConfigDataWindowButton_clickHandler(event)" horizontalCenter="0" verticalCenter="0" includeIn="hideConfigDataWindow" label="Show config data"/>
 </s:Application>
